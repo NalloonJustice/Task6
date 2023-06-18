@@ -1,0 +1,235 @@
+/**
+* ? changing default setting of the browser
+**/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1a0000;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.cart{ 
+    background-color: white; 
+    padding: 10px;
+    border-radius:5px;
+    color: #1a0000;
+    font-size: 30px;
+    position: relative;
+}
+
+.
+i {
+    cursor: pointer;   
+}
+
+.bi{
+    cursor: pointer;
+}
+
+
+.cartAmount{
+    background-color: red;
+    padding: 0px 5px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: -22px;
+    right: -16px;
+    border-radius: 5px;
+}
+
+/**
+* ? Shop item styles are here
+**/
+
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px) {
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+    
+}
+
+.item{
+    border: 2px solid #1a0000;
+    border-radius: 5px;
+    align-items: center;
+   
+
+}
+
+.detail{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.bi-dash-lg{
+    color: red;
+}
+
+
+.bi-plus-lg{
+    color: green;
+}
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.HomeBtn,.checkout,.removeAll{
+    background-color: #656b70;
+    width: 100px;
+    height: auto;
+    padding: 6px;
+    border-radius: 5px;
+    color: #fbfbff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout{
+    background-color: green;
+    border: 2px solid white;
+}
+.removeAll{
+    background-color: rgb(238, 21, 21);
+    border: 2px solid white;
+}
+
+/**
+* ! Css for X "closing button"
+**/
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+
+/**
+* ! style rule for shopping card
+**/
+
+
+.shopping-cart{
+display: grid;
+grid-template-columns: repeat(1,320px);
+justify-content: center;
+gap: 10px;
+
+}
+
+
+/**
+* ! style rule for card item
+**/
+
+.cart-item{
+    border: 2px solid red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    gap: 5px;
+    
+}
+
+.title-price-x{
+    width: 195px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+}
+
+
+.title-price{
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.cart-item-price{
+    background-color: #00070c;
+    color: white;
+    padding: 2px;
+    border-radius: 4px;
+    /* margin-bottom: 20px; */
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    /* margin-bottom:10px ; */
+
+
+}
+
+/* 
+.total-cost{
+    
+}
+
+.details{
+    padding: 5px;
+} */
+
